@@ -4,6 +4,11 @@
 #define CONFIG_H
 
 // =======================
+// FIRMWARE VERSION
+// =======================
+#define FW_VERSION  "1.0.3"
+
+// =======================
 // I2C
 // =======================
 #define I2C_SDA 21
@@ -31,7 +36,14 @@
 #define MQTT_PASS       "S4m4_mqtt*"
 #define MQTT_CLIENT_ID  "Sama"
 
-#define MQTT_TOPIC_PUB  "sama/test"
+#define MQTT_TOPIC_PUB           "sama/test"
+#define MQTT_TOPIC_OTA_UPDATE    "sama/ota/update"
+#define MQTT_TOPIC_OTA_STATUS    "sama/ota/status"
+
+// =======================
+// OTA GitHub
+// =======================
+#define VERSION_JSON_URL  "https://github.com/Sebaspineda777/sama-OTA/raw/refs/heads/main/version.json"
 
 // =======================
 // Tiempos
