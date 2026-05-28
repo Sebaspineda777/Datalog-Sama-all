@@ -8,5 +8,6 @@ bool mqttLoop();
 bool mqttIsConnected();
 bool mqttPublish(const char* topic, const String& payload);
 bool mqttPublishDefault(const String& payload);
+void mqttSetOTACallback(void (*callback)());
 
 #endif
